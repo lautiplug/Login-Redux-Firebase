@@ -43,10 +43,10 @@ export const RegisterPage = () => {
 
 
   return (
+    <Grid xs={12} sx={{margin: 3}}>
     <AuthLayout title='Crear cuenta'>
-
       <form onSubmit={onsubmit}>
-        <Grid container>
+        <Grid xs={12}>
           <Grid item xs={12} sx={{ mt: 2 }}>
             <TextField
               color='secondary'
@@ -113,6 +113,7 @@ export const RegisterPage = () => {
         </Grid>
       </form>
     </AuthLayout>
+    </Grid>
   )
 }
 

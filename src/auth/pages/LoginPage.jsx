@@ -35,6 +35,7 @@ export const LoginPage = () => {
   }
 
   return (
+    <Grid  xs={12} sx={{margin: 3, backgroundColor: 'secondary.main'}}>
     <AuthLayout title='Login'>
       <form onSubmit={onSubmit}>
         <Grid container>
@@ -75,5 +76,6 @@ export const LoginPage = () => {
         </Grid>
       </form>
     </AuthLayout>
+    </Grid>
   )
 }
