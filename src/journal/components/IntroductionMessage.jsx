@@ -31,7 +31,7 @@ export const IntroductionMessage = () => {
         className="box-shadow"
         xs={3} sx={{ width: { sm: 450 }, backgroundColor: 'white', padding: 3, borderRadius: 2, margin: 3 }}
       >
-        <Typography variant="h5" sx={{ mb: 1 }}>Welcome {displayName}.</Typography>
+        <Typography variant="h5" sx={{ mb: 1 }}>Welcome {displayName || 'dear user'}.</Typography>
         <p>Thanks for using my app; this site is being built. At the moment, you can test the login section, if you want to contribute, please send me a message <a onClick={handleClick}>here.</a> Or: </p>
         <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>
           <Grid item xs={12} sm={6}>
